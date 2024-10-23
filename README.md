@@ -5,10 +5,10 @@ Research Topics in Data Mining at TU/e.
 
 See https://sentiwiki.copernicus.eu/web/s2-mission
 
-The data is modified by converting it to 13 x 1024 x 1024 numpy matrices, 
+The original data consists of the full sentinel 2 products for which the bands have different resolutions. 
+This data is modified by converting it to 13 x 1024 x 1024 numpy matrices, 
 representing a 1024 x 1024 images and the 13 different wavelengths.
-It is used for the purpose of testing compression methods for highly dimensional imagery.
-
+It is used for the purpose of testing INR-based compression methods on highly dimensional imagery.
 
 # Acknowledgements
 The data is provided under the terms and conditions of the Legal Notice on the use of Copernicus Sentinel Data (https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice).
