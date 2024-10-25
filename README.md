@@ -3,12 +3,10 @@
 Contains modified Copernicus Sentinel-2 data 2024, processed by Group 5 of the Neural fields trajectory for the course 
 Research Topics in Data Mining at TU/e.
 
-See https://sentiwiki.copernicus.eu/web/s2-mission
 
 The original data consists of full sentinel 2 products for which the bands have different resolutions. These products are around 1~2 gb each and come with a variety of metadata and layers.
-
-
 For this dataset the raw image data per band is used, these come in the form of losslessly stored jp2 grayscale 16 bit images in which one image represents one wavelength band.
+
 These images are loaded as numpy matrices and modified by firstly bilinearly downsampling to 1830x1830 then cropped from top left to 1024x1024 after which they are provided as 13 x 1024 x 1024 matrices.
 These matrices thus represent a 1024 x 1024 image each, consisting of integer values in a range of 1 up to 2^16 (16 bit) for each of the 13 different wavelengths.
 
@@ -17,7 +15,7 @@ The data is provided under the terms and conditions of the Legal Notice on the u
 
 # Overview
 An overview of all images is given below, the sentinel 2 ID can be used to retrieve both the date and location of the image.
-
+See https://sentiwiki.copernicus.eu/web/s2-mission for details on how this ID can be read, and an exact overview of how the data is processed before our modifications.
 
 ijsselmeer-and-surroundings-low-clouds-relatively-dark
 
